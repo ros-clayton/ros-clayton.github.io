@@ -37,10 +37,10 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: inherit;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: inherit;
     text-decoration: underline;
   }
 
