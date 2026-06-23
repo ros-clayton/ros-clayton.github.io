@@ -36,7 +36,7 @@ Randomised evaluation of an after-school programme for primary school learners i
 
 (Co-authored with Dr Gabrielle Wills)
 
-Revise and resubmit at *International Journal of Educational Research*, 2026.
+Manuscript under revision for journal submission, 2026.
 
 Responsible for data analysis and contributed to empirical strategy.
 
