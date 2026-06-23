@@ -1,0 +1,36 @@
+---
+title: ""
+format:
+  pdf:
+    documentclass: article
+    pdf-engine: pdflatex
+    keep-tex: true
+    colorlinks: true
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
+    filecolor: black
+    output-file: ros-clayton-cv.pdf
+geometry: margin=0.75in
+fontsize: 10pt
+header-includes:
+  - \usepackage[scaled=1.0]{helvet}
+  - \renewcommand{\familydefault}{\sfdefault}
+  - \usepackage{enumitem}
+  - \usepackage{titlesec}
+  - \usepackage{hyperref}
+  - \pagenumbering{gobble}
+  - \setlength{\parindent}{0pt}
+  - \setlength{\parskip}{3pt}
+  - \setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt}
+  - \newcommand{\sectionrule}{\titlerule[0.4pt]}
+  - \titleformat{\section}{\large\bfseries}{}{0pt}{}[\sectionrule]
+  - \titlespacing*{\section}{0pt}{10pt}{5pt}
+---
+
+```{r}
+#| echo: false
+#| results: asis
+source("render-cv.R")
+cv_render("academic")
+```
