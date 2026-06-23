@@ -24,7 +24,7 @@ education:
     institution: Stellenbosch University
     date: Expected 2027
     academic_details:
-      - "Thesis: Foundational language skills, grade repetition, and educational attainment: Causal evidence from regression discontinuity designs"
+      - "Thesis: The Consequences of Grade Repetition in South Africa: Evidence from Early Grades to Secondary School"
       - "Supervisors: Dr Gabrielle Wills and Prof. Servaas van der Berg"
     consulting_details:
       - "Thesis: The Consequences of Grade Repetition in South Africa: Evidence from Early Grades to Secondary School"
@@ -32,6 +32,8 @@ education:
   - degree: MPhil Education
     institution: University of Cambridge
     date: 2015
+    academic_details:
+      - Awarded with distinction.
     consulting_details:
       - Awarded with distinction.
   - degree: Postgraduate Certificate in Education (Mathematics and Economics)
@@ -43,11 +45,15 @@ education:
   - degree: BSocSci (Hons) Economics
     institution: University of Cape Town
     date: 2011
+    academic_details:
+      - Awarded in the first class.
     consulting_details:
       - Awarded in the first class.
   - degree: BSocSci Economics and Mathematics
     institution: University of Cape Town
     date: 2007--2010
+    academic_details:
+      - Awarded with distinction.
     consulting_details:
       - Awarded with distinction.
 

@@ -8,13 +8,5 @@ nav_order: 3
 ---
 
 {% for presentation in site.data.cv_content.conference_presentations %}
-{% if presentation.url %}
-**[{{ presentation.title }}]({{ presentation.url }})**
-{% else %}
-**{{ presentation.title }}**
-{% endif %}
-
-{{ presentation.detail }}
-
-{% unless forloop.last %}---{% endunless %}
+- {% if presentation.url %}**[{{ presentation.title }}]({{ presentation.url }})**{% else %}**{{ presentation.title }}**{% endif %} ({{ presentation.detail }})
 {% endfor %}

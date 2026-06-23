@@ -53,6 +53,14 @@ cv_entry_title <- function(item) {
   cv_bold(title)
 }
 
+cv_parenthetical <- function(...) {
+  parts <- Filter(function(x) !is.null(x) && length(x) > 0 && nzchar(x), list(...))
+  if (length(parts) == 0) {
+    return("")
+  }
+  sprintf(" (%s)", cv_escape(paste(unlist(parts), collapse = "; ")))
+}
+
 cv_profile_header <- function(data, profile = "academic") {
   prof <- data$profiles[[profile]]
   if (is.null(prof)) {
@@ -144,35 +152,14 @@ cv_titled_list <- function(items, section_title) {
 cv_selected_outputs <- function(data) {
   cat("# Selected research and evaluation outputs\n\n")
   for (item in data$working_papers) {
-    title <- item$short_title %||% item$title
-    cat(sprintf("- %s", cv_entry_title(modifyList(item, list(title = title)))))
-    if (!is.null(item$status) && nzchar(item$status)) {
-      cat(sprintf(" (%s)", cv_escape(item$status)))
-    }
-    if (!is.null(item$coauthors) && nzchar(item$coauthors)) {
-      cat(sprintf(" (%s.)", cv_escape(item$coauthors)))
-    }
-    cat("\n\n")
+    cat(sprintf("- %s%s\n\n", cv_entry_title(item), cv_parenthetical(item$status, item$coauthors)))
   }
 }
 
 cv_working_papers <- function(data) {
   cat("# Working Papers\n\n")
   for (item in data$working_papers) {
-    title <- item$title
-    if (!is.null(item$url) && nzchar(item$url)) {
-      cat(sprintf("%s\n\n", cv_href(item$url, title)))
-    } else {
-      cat(sprintf("%s\n\n", cv_escape(title)))
-    }
-    if (!is.null(item$coauthors) && nzchar(item$coauthors)) {
-      cat(sprintf("(%s)\n\n", cv_escape(item$coauthors)))
-    }
-    cat(sprintf("%s\n\n", cv_escape(item$status)))
-    description <- item$cv_description %||% item$description
-    if (!is.null(description) && nzchar(description)) {
-      cat(sprintf("%s\n\n", cv_escape(description)))
-    }
+    cat(sprintf("- %s%s\n\n", cv_entry_title(item), cv_parenthetical(item$status, item$coauthors)))
   }
 }
 
@@ -183,26 +170,15 @@ cv_presentations <- function(data, include_policy = FALSE) {
     items <- c(items, data$policy_presentations)
   }
   for (item in items) {
-    title <- item$title
-    if (!is.null(item$url) && nzchar(item$url)) {
-      cat(sprintf("%s\n\n", cv_href(item$url, title)))
-    } else {
-      cat(sprintf("%s\n\n", cv_escape(title)))
-    }
     detail <- item$cv_detail %||% item$detail
-    cat(sprintf("%s\n\n", cv_escape(detail)))
+    cat(sprintf("- %s%s\n\n", cv_entry_title(item), cv_parenthetical(detail)))
   }
 }
 
 cv_policy_writing <- function(data) {
   cat("# Policy writing\n\n")
   for (item in data$policy_reports) {
-    if (!is.null(item$url) && nzchar(item$url)) {
-      cat(sprintf("%s\n\n", cv_href(item$url, item$title)))
-    } else {
-      cat(sprintf("%s\n\n", cv_escape(item$title)))
-    }
-    cat(sprintf("%s\n\n", cv_escape(item$detail)))
+    cat(sprintf("- %s%s\n\n", cv_entry_title(item), cv_parenthetical(item$detail)))
   }
 }
 
@@ -245,7 +221,7 @@ cv_render_consulting <- function() {
   cv_consulting_experience()
   cv_selected_outputs(data)
   cv_presentations(data, include_policy = TRUE)
-  cv_titled_list(data$policy_reports, "Policy and public-facing writing")
+  cv_policy_writing(data)
   cv_media(data)
   cv_skills(data)
 }
