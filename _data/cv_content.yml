@@ -1,0 +1,106 @@
+profiles:
+  academic:
+    name: Ros Clayton
+    label:
+      - PhD Candidate in Economics, Stellenbosch University
+    email: rclayton@sun.ac.za
+    fields:
+      - Economics of Education
+      - Development Economics
+      - Applied Microeconometrics
+  consulting:
+    name: Ros Clayton
+    label:
+      - Education researcher
+      - PhD Candidate in Economics, Stellenbosch University
+    email: rosclaytonconsulting@gmail.com
+    fields:
+      - Economics of Education
+      - Development Economics
+      - Program Evaluation
+
+education:
+  - degree: PhD in Economics
+    institution: Stellenbosch University
+    date: Expected 2027
+    academic_details:
+      - "Thesis: Foundational language skills, grade repetition, and educational attainment: Causal evidence from regression discontinuity designs"
+      - "Supervisors: Dr Gabrielle Wills and Prof. Servaas van der Berg"
+    consulting_details:
+      - "Thesis: The Consequences of Grade Repetition in South Africa: Evidence from Early Grades to Secondary School"
+      - "Supervisors: Dr Gabrielle Wills and Prof. Servaas van der Berg"
+  - degree: MPhil Education
+    institution: University of Cambridge
+    date: 2015
+    consulting_details:
+      - Awarded with distinction.
+  - degree: Postgraduate Certificate in Education (Mathematics and Economics)
+    institution: University of Cape Town
+    date: 2012
+    consulting_only: true
+    consulting_details:
+      - Awarded with distinction.
+  - degree: BSocSci (Hons) Economics
+    institution: University of Cape Town
+    date: 2011
+    consulting_details:
+      - Awarded in the first class.
+  - degree: BSocSci Economics and Mathematics
+    institution: University of Cape Town
+    date: 2007--2010
+    consulting_details:
+      - Awarded with distinction.
+
+working_papers:
+  - title: "The impact of early grade repetition on test scores: Evidence from a regression discontinuity design in South Africa"
+    short_title: The impact of early grade repetition on test scores
+    url: https://resep.sun.ac.za/wp-content/uploads/2025/12/WP06_25_Ros-Clayton-Impact-of-early-grade-repetition.pdf
+    status: Resep working paper, 2025.
+    description: Uses administrative data for six provinces and an RD design to estimate the causal impact of Grade 1 and Grade 4 repetition on later achievement.
+    cv_description: Extended version of the paper submitted to this workshop. Uses administrative data for six provinces and an RD design to estimate the causal impact of Grade 1 and Grade 4 repetition on later achievement.
+  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
+    short_title: Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
+    url: https://resep.sun.ac.za/wp-content/uploads/2024/12/WP02_25-Linguistic-Interdependence-Ros-Clayton.pdf
+    status: Resep working paper, 2025.
+    description: Studies the relationship between Foundation Phase language proficiency and later academic outcomes.
+  - title: "From Grade 7 arithmetic to matric: A quantitative evaluation of the Numeric afterschool maths program"
+    url: https://numeric.org/wp-content/uploads/2024/05/Numeric-Learner-Longitudinal-Study-full-report.pdf
+    status: Evaluation report, 2024.
+    description: Randomised evaluation of an after-school programme for primary school learners in South Africa, estimating causal impacts on academic outcomes up to high school completion.
+  - title: "Growing apart: Tracking the pro-girl achievement gap across early grades in South African primary schools"
+    status: Manuscript under revision for journal submission, 2026.
+    coauthors: Co-authored with Dr Gabrielle Wills
+    description: Responsible for data analysis and contributed to empirical strategy.
+
+in_progress:
+  - title: "Late-stage grade retention and final schooling outcomes: Regression discontinuity evidence from South Africa"
+    description: Uses administrative data for six provinces and an RD design to estimate the impact of Grade 10 or Grade 11 repetition on National Senior Certificate outcomes including graduation and dropout.
+
+conference_presentations:
+  - title: "The impact of early grade repetition on test scores: Evidence from a regression discontinuity design in South Africa"
+    short_title: The impact of early grade repetition on test scores
+    detail: Economic Society of South Africa Centenary Conference, 2025.
+    cv_detail: Economic Society of South Africa Centenary Conference (2025)
+
+policy_reports:
+  - title: The impact of early grade repetition on learner marks
+    url: https://resep.sun.ac.za/wp-content/uploads/2025/12/PB02_Ros-Clayton_-Repetition.pdf
+    detail: Resep policy brief, 2025.
+  - title: How home language mastery predicts early learning outcomes
+    url: https://resep.sun.ac.za/wp-content/uploads/2025/12/PB03_25_Ros-Clayton_Linguistic-Interdependence.pdf
+    detail: Resep policy brief, 2025.
+
+policy_presentations:
+  - title: The effect of early-grade repetition on Home Language performance
+    url: https://drive.google.com/file/d/1S6Azqq3HY_2IzISwSErATeZHHt2VAh-F/view?usp=drive_link
+    detail: Reading Panel, Johannesburg, 2026.
+    detail_html: "[Reading Panel](https://www.readingpanel.co.za/), Johannesburg, 2026."
+  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
+    detail: RESEP Quantitative Education Conference, University of Stellenbosch, 2025.
+    cv_detail: RESEP Quantitative Education Conference, University of Stellenbosch (2025)
+
+media:
+  - text: Interviewed by SABC News on gender gaps in South African schooling and the Grade 4 linguistic transition.
+    url: https://youtu.be/FQsRl-o-SL8?si=B57LKdicftCExufw
+  - text: Interviewed by Newzroom Afrika on how early grade repetition affects learning outcomes.
+    url: https://youtu.be/BHs59FXR7x8?si=vNKc9IQxGsv5hr0c

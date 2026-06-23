@@ -9,24 +9,28 @@ nav_order: 4
 
 ## Policy Reports
 
-**[The impact of early grade repetition on learner marks](https://resep.sun.ac.za/wp-content/uploads/2025/12/PB02_Ros-Clayton_-Repetition.pdf)**
+{% for report in site.data.cv_content.policy_reports %}
+{% if report.url %}
+**[{{ report.title }}]({{ report.url }})**
+{% else %}
+**{{ report.title }}**
+{% endif %}
 
-Resep policy brief, 2025.
+{{ report.detail }}
 
----
-
-**[How home language mastery predicts early learning outcomes](https://resep.sun.ac.za/wp-content/uploads/2025/12/PB03_25_Ros-Clayton_Linguistic-Interdependence.pdf)**
-
-Resep policy brief, 2025.
+{% unless forloop.last %}---{% endunless %}
+{% endfor %}
 
 ## Policy Presentations
 
-**[The effect of early-grade repetition on Home Language performance](https://drive.google.com/file/d/1S6Azqq3HY_2IzISwSErATeZHHt2VAh-F/view?usp=drive_link)**
+{% for presentation in site.data.cv_content.policy_presentations %}
+{% if presentation.url %}
+**[{{ presentation.title }}]({{ presentation.url }})**
+{% else %}
+**{{ presentation.title }}**
+{% endif %}
 
-[Reading Panel](https://www.readingpanel.co.za/), Johannesburg, 2026.
+{% if presentation.detail_html %}{{ presentation.detail_html }}{% else %}{{ presentation.detail }}{% endif %}
 
----
-
-**Linguistic interdependence? Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks**
-
-RESEP Quantitative Education Conference, University of Stellenbosch, 2025.
+{% unless forloop.last %}---{% endunless %}
+{% endfor %}
