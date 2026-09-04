@@ -4,6 +4,8 @@ profiles:
     label:
       - PhD Candidate in Economics, Stellenbosch University
     email: rclayton@sun.ac.za
+    website: https://ros-clayton.github.io/
+    website_label: Website
     fields:
       - Economics of Education
       - Development Economics
@@ -61,27 +63,22 @@ working_papers:
   - title: "The impact of early grade repetition on test scores: Evidence from a regression discontinuity design in South Africa"
     short_title: The impact of early grade repetition on test scores
     url: https://resep.sun.ac.za/wp-content/uploads/2026/04/WP06_25_Ros-Clayton-Impact-of-early-grade-repetition.pdf
-    status: Resep working paper, 2025.
-    description: Uses administrative data for six provinces and an RD design to estimate the causal impact of Grade 1 and Grade 4 repetition on later achievement.
-    cv_description: Extended version of the paper submitted to this workshop. Uses administrative data for six provinces and an RD design to estimate the causal impact of Grade 1 and Grade 4 repetition on later achievement.
-  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
-    short_title: Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
+    status: RESEP, Stellenbosch University, 2025
+  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of Grade 4 repetition and EFAL marks
+    short_title: Foundation Phase mastery in home language as a predictor of Grade 4 repetition and EFAL marks
     url: https://resep.sun.ac.za/wp-content/uploads/2026/04/WP02_25-Linguistic-Interdependence-Ros-Clayton.pdf
-    status: Resep working paper, 2025.
-    description: Studies the relationship between Foundation Phase language proficiency and later academic outcomes.
+    status: RESEP, Stellenbosch University, 2025
   - title: "From Grade 7 arithmetic to matric: A quantitative evaluation of the Numeric afterschool maths program"
     url: https://numeric.org/wp-content/uploads/2024/05/Numeric-Learner-Longitudinal-Study-full-report.pdf
     status: Evaluation report, 2024.
     description: Randomised evaluation of an after-school programme for primary school learners in South Africa, estimating causal impacts on academic outcomes up to high school completion.
   - title: "Growing apart: Tracking the pro-girl achievement gap across early grades in South African primary schools"
-    status: Manuscript under revision for journal submission, 2026.
+    status: RESEP, Stellenbosch University, 2026
     coauthors: Co-authored with Dr Gabrielle Wills
-    description: Responsible for data analysis and contributed to empirical strategy.
+    url: https://resep.sun.ac.za/growing-apart-tracking-the-pro-girl-achievement-gap-across-early-grades-in-south-african-primary-schools/
 
 in_progress:
-  - title: "Late-stage grade retention and final schooling outcomes: Regression discontinuity evidence from South Africa"
-    description: Uses administrative data for six provinces and an RD design to estimate the impact of Grade 10 or Grade 11 repetition on National Senior Certificate outcomes including graduation and dropout.
-
+  - title: "Grade 10 retention and high school attainment: Regression discontinuity evidence from South Africa"
 conference_presentations:
   - title: "The impact of early grade repetition on test scores: Evidence from a regression discontinuity design in South Africa"
     short_title: The impact of early grade repetition on test scores
@@ -91,17 +88,17 @@ conference_presentations:
 policy_reports:
   - title: The impact of early grade repetition on learner marks
     url: https://resep.sun.ac.za/wp-content/uploads/2026/04/PB02_Ros-Clayton_-Repetition.pdf
-    detail: Resep policy brief, 2025.
+    detail: RESEP policy brief, 2025.
   - title: How home language mastery predicts early learning outcomes
     url: https://resep.sun.ac.za/wp-content/uploads/2026/04/PB03_25_Ros-Clayton_Linguistic-Interdependence.pdf
-    detail: Resep policy brief, 2025.
+    detail: RESEP policy brief, 2025.
 
 policy_presentations:
   - title: The effect of early-grade repetition on Home Language performance
     url: https://drive.google.com/file/d/1S6Azqq3HY_2IzISwSErATeZHHt2VAh-F/view?usp=drive_link
     detail: Reading Panel, Johannesburg, 2026.
     detail_html: "[Reading Panel](https://www.readingpanel.co.za/), Johannesburg, 2026."
-  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of grade 4 repetition and EFAL marks
+  - title: Linguistic interdependence? Foundation Phase mastery in home language as a predictor of Grade 4 repetition and EFAL marks
     detail: RESEP Quantitative Education Conference, University of Stellenbosch, 2025.
     cv_detail: RESEP Quantitative Education Conference, University of Stellenbosch (2025)
 

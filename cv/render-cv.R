@@ -67,11 +67,21 @@ cv_profile_header <- function(data, profile = "academic") {
     stop("Unknown CV profile: ", profile)
   }
 
+  contact <- sprintf("\\href{mailto:%s}{%s}", prof$email, cv_escape(prof$email))
+  if (!is.null(prof$website) && nzchar(prof$website)) {
+    website_label <- prof$website_label %||% prof$website
+    contact <- paste(
+      contact,
+      sprintf("\\href{%s}{%s}", prof$website, cv_escape(website_label)),
+      sep = " $\\mid$ "
+    )
+  }
+
   lines <- c(
     "\\begin{center}",
     sprintf("{\\LARGE \\textbf{%s}}\\\\", cv_escape(prof$name)),
     paste0(cv_escape(unlist(prof$label)), "\\\\"),
-    sprintf("\\href{mailto:%s}{%s}", prof$email, cv_escape(prof$email)),
+    contact,
     "\\end{center}"
   )
   cat(paste(lines, collapse = "\n"), "\n\n")
@@ -126,7 +136,7 @@ cv_consulting_experience <- function() {
 
 cv_academic_research_experience <- function() {
   cat("# Research Experience\n\n")
-  cat("\\textbf{Researcher, Resep, Stellenbosch University} \\hfill 2024--present\n\n")
+  cat("\\textbf{PhD candidate, RESEP, Stellenbosch University} \\hfill 2024--present\n\n")
   cat("- Designed and implemented causal inference studies using RD\n")
   cat("- Analysed and cleaned large administrative datasets in R (data.table) and Stata\n")
   cat("- Conducted quantile regression and fixed effects models to study educational outcomes\n\n")
